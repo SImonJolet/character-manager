@@ -1,18 +1,16 @@
-var axios = require("axios");
-var api = "https://character-database.becode.xyz/";
-// async function getPerso() {
-//     let result = await axios.get(`https://character-database.becode.xyz/characters`);
-//   console.log(result);
-//   const array = result.data;
-//   console.log(array);
-//   array.forEach((element: { name: string }) => {
-//     console.log(`${element.name}`);
-//   });
-// }
-axios
-    .get(api + "/characters")
-    .then(function (response) {
-    console.log(response);
-})["catch"](function (error) {
+"use strict";
+exports.__esModule = true;
+// import axios from 'axios';
+var axios_1 = require("axios");
+axios_1["default"]
+  .get("https://character-database.becode.xyz/characters")
+  .then(function(response) {
+    // handle success
+    var result = response.data;
+    // console.log(response);
+    console.log(result);
+  })
+  ["catch"](function(error) {
+    // handle error
     console.log(error);
-});
+  });

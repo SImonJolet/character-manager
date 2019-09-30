@@ -1,23 +1,15 @@
-const axios = require("axios");
-const api = "https://character-database.becode.xyz/";
-
-// async function getPerso() {
-//     let result = await axios.get(`https://character-database.becode.xyz/characters`);
-//   console.log(result);
-
-//   const array = result.data;
-//   console.log(array);
-
-//   array.forEach((element: { name: string }) => {
-//     console.log(`${element.name}`);
-//   });
-// }
+// import axios from 'axios';
+import axios from "axios";
 
 axios
-  .get(`${api}/characters`)
+  .get("https://character-database.becode.xyz/characters")
   .then(function(response) {
-    console.log(response);
+    // handle success
+    let result = response.data;
+    // console.log(response);
+    console.log(result);
   })
   .catch(function(error) {
+    // handle error
     console.log(error);
   });
