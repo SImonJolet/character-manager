@@ -9,9 +9,17 @@ axios_1["default"]
     var result = response.data;
     // console.log(response);
     console.log(result);
-    console.log(result[1].description);
     for (var i = 0; i < result.length; i++) {
-        console.log("Je suis " + result[i].name + ", je me d\u00E9cris comme \u00E9tant " + result[i].shortDescription);
+        var name_1 = result[i].name;
+        var shortDescription = result[i].shortDescription;
+        var image = result[i].image;
+        console.log(name_1);
+        console.log(shortDescription);
+        var div = document.createElement("div");
+        var content = document.createTextNode("Bonjour, je suis " + name_1 + " et je me d\u00E9cris comme \u00E9tant " + shortDescription);
+        div.appendChild(content);
+        var currentDiv = document.getElementById("div1");
+        document.body.insertBefore(div, currentDiv);
     }
 })["catch"](function (error) {
     // handle error

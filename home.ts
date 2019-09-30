@@ -7,11 +7,20 @@ axios
     let result = response.data;
     // console.log(response);
     console.log(result);
-    console.log(result[1].description);
     for (let i = 0; i < result.length; i++) {
-      console.log(
-        `Je suis ${result[i].name}, je me décris comme étant ${result[i].shortDescription}`
+      let name = result[i].name;
+      let shortDescription = result[i].shortDescription;
+      let image = result[i].image;
+      console.log(name);
+      console.log(shortDescription);
+
+      let div = document.createElement("div");
+      let content = document.createTextNode(
+        `Bonjour, je suis ${name} et je me décris comme étant ${shortDescription}`
       );
+      div.appendChild(content);
+      var currentDiv = document.getElementById(`div1`);
+      document.body.insertBefore(div, currentDiv);
     }
   })
   .catch(function(error: string) {
