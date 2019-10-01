@@ -1,11 +1,25 @@
-.container {
-  background: gray;
-  width: 100vh;
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
+
 h1 {
   color: red;
 }
 .encadre {
   background-color: aqua;
   border: 3px solid pink;
+}
+li {
+  background-color: salmon;
+  width: 160px;
+  height: 150px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
 }
