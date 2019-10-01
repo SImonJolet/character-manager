@@ -1,0 +1,11 @@
+.container{
+    background: gray;
+    width: 100vh;
+}
+h1{
+    color: red;
+}
+.encadre {
+    background-color: aqua;
+    border: 3px solid pink;
+}

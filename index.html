@@ -8,9 +8,24 @@
     <!-- <script type="module" src="home.js"></script> -->
     <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
     <script src="home.js"></script>
+    <link rel="stylesheet" href="home.css">
     
 </head>
 <body>
-    
+    <div class="container">
+        <section class="material">
+
+            <template id="tpl-hero">
+                <li class="hero">
+                    <h4 class="title">
+                        <strong class="name"></strong>
+                        <em class="shortDescription"></em>
+                    </h4>
+                    <p class="powers"></p>
+                </li>
+            </template>
+            <ol id="target"></ol>
+        </section>
+    </div>
 </body>
 </html>
