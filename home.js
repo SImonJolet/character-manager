@@ -1,18 +1,19 @@
 "use strict";
 exports.__esModule = true;
-// import axios from 'axios';
 var axios_1 = require("axios");
-axios_1["default"].get('https://character-database.becode.xyz/characters')
+var api = "https://character-database.becode.xyz";
+axios_1["default"]
+    .get(api + "/characters")
     .then(function (response) {
     // handle success
     var result = response.data;
     var tpl = document.querySelector("#tpl-hero");
     var target = document.querySelector("#target");
     var displayHero = function (el) {
-        var elt = tpl.content.cloneNode(true);
+        var elt = tpl.cloneNode(true).content;
         elt.querySelector(".name").innerHTML = el.name;
         elt.querySelector(".shortDescription").innerHTML = el.shortDescription;
-        elt.querySelector(".img").innerHTML = el.img;
+        elt.querySelector("img").src = "data:image/png;base64," + el.image;
         // elt.querySelector(".powers").innerHTML = el.abilities.join(", ");
         target.appendChild(elt);
     };
