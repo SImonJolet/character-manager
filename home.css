@@ -1,25 +1,46 @@
-ol {
+body {
+  padding-top: 2em;
+}
+header {
+  text-align: center;
+}
+#Name {
+  font-family: "Notable", sans-serif;
+  color: #e74c3c;
+  font-size: 6vw;
+}
+#Tool {
+  font-family: "Turret Road", cursive;
+  font-size: 3vw;
+}
+#target {
   display: flex;
   flex-wrap: wrap;
+}
+.heroList {
+  border: 5px solid rgba(46, 167, 193, 0.3);
+  border-radius: 2vw;
+  height: 38vw;
+  width: 26%;
+  margin: 2%;
+  padding-left: 2vw;
+  padding-top: 2vw;
   list-style: none;
-}
-
-h1 {
-  color: red;
-}
-.encadre {
-  background-color: aqua;
-  border: 3px solid pink;
-}
-li {
-  background-color: salmon;
-  width: 160px;
-  height: 150px;
-  margin: 5px;
-  border: 1px solid black;
-  border-radius: 2px;
-}
-.title {
   display: flex;
   flex-direction: column;
+  background-color: #85c1e9;
+}
+.name {
+  font-family: "Notable", sans-serif;
+  font-size: 3vw;
+  color: #e74c3c;
+  text-align: center;
+  text-shadow: 1px 1px 1px white;
+}
+.shortDescription {
+  font-family: "Turret Road", cursive;
+}
+
+#imageHero {
+  text-align: center;
 }

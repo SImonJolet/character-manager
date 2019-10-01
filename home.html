@@ -9,19 +9,37 @@
     <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
     <script src="home.js"></script>
     <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Notable&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <header>
+      <div class="Title">
+        <div id="Name">Character Manager</div>
+        <div id="Tool">Your Tool to manage your favorite Heroes</div>
+      </div>
+    </header>
     <div class="container">
       <section class="material">
         <template id="tpl-hero">
-          <li class="hero">
-            <h4 class="title">
-              <strong class="name"></strong>
-              <em class="shortDescription"></em>
-            </h4>
+          <li class="heroList">
+            <div class="hero">
+              <div class="name"></div>
+              <p class="shortDescription"></p>
+              <img id="imageHero" src="" alt="">
+            
             <p class="powers"></p>
-            <button>bu</button>
+
+            <button type="button" class="cardBtn" id="open">Open</button>
+            <button type="button" class="cardBtn" id="delete">Delete</button>
+            <button type="button" class="cardBtn" id="edit">Edit</button>
           </li>
         </template>
         <ol id="target"></ol>
