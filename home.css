@@ -1,23 +1,11 @@
-body {
-  background-color: salmon;
+.container {
+  background: gray;
+  width: 100vh;
 }
-
-div {
-  margin: 10px;
-  border: 1px solid black;
-  height: auto;
-  width: 100%;
-}
-
 h1 {
-  font-size: 1.2em;
-  color: black;
-  font-weight: 900;
+  color: red;
 }
-
-h2 {
-  font-size: 1em;
-  color: black;
-  font-weight: 500;
+.encadre {
+  background-color: aqua;
+  border: 3px solid pink;
 }
-/*# sourceMappingURL=home.css.map */

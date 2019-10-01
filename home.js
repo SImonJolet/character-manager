@@ -7,15 +7,16 @@ axios_1["default"]
     .then(function (response) {
     // handle success
     var result = response.data;
-    // console.log(response);
-    console.log(result);
-    var template = document.querySelector("#tpl-hero");
+    var tpl = document.querySelector("#tpl-hero");
     var target = document.querySelector("#target");
-    result.forEach(function (element) {
-        var displayHero = function (element) {
-            var elt = template.cloneNode(true).content;
-        };
-    });
+    var displayHero = function (el) {
+        var elt = tpl.cloneNode(true).content;
+        elt.querySelector(".name").innerHTML = el.name;
+        elt.querySelector(".shortDescription").innerHTML = el.shortDescription;
+        // elt.querySelector(".powers").innerHTML = el.abilities.join(", ");
+        target.appendChild(elt);
+    };
+    result.forEach(displayHero);
 })["catch"](function (error) {
     // handle error
     console.log(error);
