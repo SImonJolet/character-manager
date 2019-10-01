@@ -10,11 +10,12 @@ axios.get('https://character-database.becode.xyz/characters')
     const target = document.querySelector("#target");
   
     const displayHero = el => {
-      const elt = tpl.cloneNode(true).content;
-  
+      
+      const elt = tpl.content.cloneNode(true);
+      
       elt.querySelector(".name").innerHTML = el.name;
       elt.querySelector(".shortDescription").innerHTML = el.shortDescription;
-  
+      elt.querySelector(".img").innerHTML = el.img;
       // elt.querySelector(".powers").innerHTML = el.abilities.join(", ");
   
       target.appendChild(elt);

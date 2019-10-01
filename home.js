@@ -9,9 +9,10 @@ axios_1["default"].get('https://character-database.becode.xyz/characters')
     var tpl = document.querySelector("#tpl-hero");
     var target = document.querySelector("#target");
     var displayHero = function (el) {
-        var elt = tpl.cloneNode(true).content;
+        var elt = tpl.content.cloneNode(true);
         elt.querySelector(".name").innerHTML = el.name;
         elt.querySelector(".shortDescription").innerHTML = el.shortDescription;
+        elt.querySelector(".img").innerHTML = el.img;
         // elt.querySelector(".powers").innerHTML = el.abilities.join(", ");
         target.appendChild(elt);
     };
