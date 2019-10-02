@@ -10,22 +10,19 @@ axios_1["default"]
     console.log(result);
     var tpl = document.querySelector("#tpl-hero");
     var target = document.querySelector("#target");
+    function deleteHero(id) {
+        console.log("caca");
+        console.log(id);
+    }
     var displayHero = function (el) {
         var elt = tpl.cloneNode(true).content;
         console.log(el.id);
         elt.querySelector(".name").innerHTML = el.name;
         elt.querySelector(".shortDescription").innerHTML = el.shortDescription;
         elt.querySelector("img").src = "data:image/png;base64," + el.image;
-        elt.querySelector(".btnOpen").innerHTML = "\n      <a href=\"./characters.html?id=" + el.id + "\"><button type=\"button\" id=\"btnOpen\">Open</button></a>\n     ";
-        elt.querySelector(".btnDelete").innerHTML = "\n      <a href=\"#\"><button type=\"button\" id=\"btnDelete\">Delete</button></a>";
+        elt.querySelector(".btnOpen").innerHTML = "\n      <a href=\"./characters.html?id=" + el.id + "\" target=\"_blank\"><button type=\"button\" id=\"btnOpen\">Open</button></a>\n     ";
+        elt.querySelector(".btnDelete").innerHTML = "\n      <button type=\"button\" id=\"btnDelete\" onClick=\"deleteHero(" + el.id + ")\">Delete</button>";
         elt.querySelector(".btnEdit").innerHTML = "<a href=\"./edit.html?id=" + el.id + "\"><button>Edit</button></a>";
-        // elt.querySelector(".powers").innerHTML = el.abilities.join(", ");
-        // elt.getElementById("open").onclick = () => {
-        //   return open(el);
-        // };
-        // let open = el => {
-        //   const tplsingleChar = document.querySelector("#tpl-singleChar");
-        // };
         target.appendChild(elt);
     };
     result.forEach(displayHero);

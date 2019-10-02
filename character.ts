@@ -7,6 +7,14 @@ console.log(id);
 import axios from "axios";
 const api = "https://character-database.becode.xyz";
 
-axios.get(`${api}/characters/${id}`).then(response: any){
-    
-};
+axios.get(`${api}/characters/${id}`).then(function(response: any) {
+  const info = response.data;
+
+  document.querySelector(".Name")!.innerHTML = `Mon nom est ${info.name}`;
+  document.querySelector(".shortDescription")!.innerHTML =
+    info.shortDescription;
+  document.querySelector(".Description")!.innerHTML = info.description;
+  (<HTMLImageElement>(
+    document.querySelector(".Image")
+  )).src = `data:image/png;base64,${info.image}`;
+});
