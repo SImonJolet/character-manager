@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css?family=Notable&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="create.css" />
   </head>
   <body>
@@ -25,10 +29,10 @@
     <main>
       <form class="createForm">
         <div class="nameForm">
-          <label for="name">What's your hero's name</label>
+          <label for="name">What's your hero's name ?</label>
           <input type="text" name="name" id="nameForm" required />
         </div>
-        <div class="shortDescirptionCreate">
+        <div class="shortDescriptionForm">
           <label for="shortDescription"
             >Please write a short description (max 10 words)</label
           >
@@ -39,13 +43,15 @@
             required
           />
         </div>
-        <!-- <div class="descriptionForm">
+        <div class="descriptionForm">
           <label for="description">Now his/her complete description</label>
-          <input type="text" name="description" id="descriptionForm" required />
-        </div> -->
+          <input type="text" name="description" id="descriptionForm" />
+        </div>
         <div class="img">
-          <label for="image">Do you have a picture ??</label>
-          <input type="file" name="file" id="file" />
+          <label for="file" class="image-container"
+            >Add a picture.
+            <input type="file" name="file" id="file" />
+          </label>
         </div>
         <div class="submit">
           <input type="submit" value="Create" id="submitCreate" />

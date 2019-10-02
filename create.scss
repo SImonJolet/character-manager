@@ -1,5 +1,5 @@
 main {
-  padding-top: 2em;
+  padding: 2vw;
 }
 header {
   text-align: center;
@@ -12,4 +12,79 @@ header {
 #Tool {
   font-family: "Turret Road", cursive;
   font-size: 3vw;
+}
+.nameForm {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 4vw;
+  padding-bottom: 2vw;
+}
+.shortDescriptionForm {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 4vw;
+  padding-bottom: 2vw;
+}
+.descriptionForm {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 4vw;
+  padding-bottom: 4vw;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
+  padding-bottom: 3vw;
+}
+#nameForm {
+  height: 4vw;
+  width: 80%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+#shortDescirptionCreate {
+  height: 4vw;
+  width: 80%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+#descriptionForm {
+  height: 4vw;
+  width: 80%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+input#file {
+  display: none;
+}
+.image-container {
+  padding: 1vw;
+  width: 40%;
+  margin: auto;
+  border: 5px solid rgba(46, 167, 193, 0.3);
+  border-radius: 2vw;
+  background-color: #85c1e9;
+  color: #e74c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+}
+#submitCreate {
+  font-family: "Turret Road", cursive;
+  font-weight: bold;
+  font-size: 4vw;
+  height: 8vw;
+  width: 50%;
+  background-color: white;
+  border-radius: 2vw;
+  border: 3px solid rgba(231, 76, 60, 0.8);
+  color: #85c1e9;
 }
