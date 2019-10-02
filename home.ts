@@ -10,11 +10,7 @@ axios
 
     const tpl = document.querySelector("#tpl-hero");
     const target = document.querySelector("#target");
-    function deleteHero(id: string) {
-      console.log("caca");
 
-      console.log(id);
-    }
     const displayHero = (el: any) => {
       const elt = tpl!.cloneNode(true).content;
       console.log(el.id);
@@ -27,7 +23,7 @@ axios
       <a href="./characters.html?id=${el.id}" target="_blank"><button type="button" id="btnOpen">Open</button></a>
      `;
       elt.querySelector(".btnDelete").innerHTML = `
-      <button type="button" id="btnDelete" onClick="deleteHero(${el.id})">Delete</button>`;
+      <button type="button" value=${el.id} class="btnDeleteFunct">Delete</button>`;
       elt.querySelector(
         ".btnEdit"
       ).innerHTML = `<a href="./edit.html?id=${el.id}"><button>Edit</button></a>`;
@@ -35,6 +31,18 @@ axios
       target.appendChild(elt);
     };
     result.forEach(displayHero);
+    const bts = document.querySelectorAll(".btnDeleteFunct");
+    console.log(bts);
+    bts.forEach(el => {
+      el.addEventListener("click", () => {
+        const id: string = (<HTMLInputElement>el).value;
+        console.log(id);
+        if (confirm("Are you sure ?? I mean, for real ?"))
+          axios.delete(`${api}/characters/${id}`).then(function(response: any) {
+            document.location.reload(true);
+          });
+      });
+    });
   })
   .catch(function(error: string) {
     // handle error
