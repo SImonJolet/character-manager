@@ -1,0 +1,32 @@
+body {
+  padding-top: 2em;
+}
+header {
+  text-align: center;
+}
+#Name {
+  font-family: "Notable", sans-serif;
+  color: #e74c3c;
+  font-size: 6vw;
+}
+#Tool {
+  font-family: "Turret Road", cursive;
+  font-size: 3vw;
+}
+.container {
+  width: 50%;
+  border: 1vw solid rgba(46, 167, 193, 0.5);
+  border-radius: 2vw;
+  text-align: center;
+}
+.Name {
+  font-family: "Notable", sans-serif;
+  color: #e74c3c;
+  font-size: 4vw;
+  padding: 1vw;
+  padding-bottom: 2vw;
+}
+.shortDescription {
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+}

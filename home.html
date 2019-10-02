@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Character Manager</title>
+    <!-- <script type="module" src="home.js"></script> -->
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="home.js"></script>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Notable&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="Title">
+        <div id="Name">Character Manager</div>
+        <div id="Tool">Your Tool to manage your favorite Heroes</div>
+      </div>
+    </header>
+    <div class="container">
+<a href="create.html">
+      <button type="button"  target="_blank">Create</button></a>
+      <section class="material">
+        <template id="tpl-hero">
+          <li class="heroList">
+            <div class="hero">
+              <div class="name"></div>
+              <p class="shortDescription"></p>
+              <img id="imageHero" src="" alt="">
+            
+            <p class="powers"></p>
+            <div class="btnOpen"></div>
+            <div class="btnDelete"></div>
+            <div class="btnEdit"></div>
+           
+          </li>
+        </template>
+        <ol id="target"></ol>
+      </section>
+    </div>
+    <a href="characters.html"></a>
+    <a href="edit.html"></a>
+  </body>
+</html>
