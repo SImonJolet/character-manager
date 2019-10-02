@@ -8,7 +8,13 @@ I was unable to deploy the website on Netlify and on GitHubPages, i don't know w
 
 Anyway, there is still a way to look at what we made.
 
-Clone this repository then use the command parcel home.html
+Clone this repository then use the **command** 
+
+> parcel home.html
+
+Then open your **browser** and use the **url**
+>localhost:1234
+
 It should work. If it's not, let me know.
 
 We created a home page with every characters aviable in the API. From this page, you can click a button to access a create-page, on wich you can create your own new character (click the "create" button only once, then come back on the home page.
