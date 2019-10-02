@@ -15,13 +15,13 @@ axios
       const elt = tpl.cloneNode(true).content;
       console.log(el.id);
 
-      // async function deleteHero(id: string) {
-      //   console.log("Do you want to delete it ?");
-      //   await axios.delete(el);
-      // }
-      // console.log(deleteHero);
+      //   async function deleteHero(id: string) {
+      //     console.log("Do you want to delete it ?");
+      //     await axios.delete(el);
+      //   }
+      //   console.log(deleteHero);
 
-      // const edit = () => {};
+      //   const edit = () => {};
 
       elt.querySelector(".name").innerHTML = el.name;
       elt.querySelector(".shortDescription").innerHTML = el.shortDescription;
