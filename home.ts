@@ -18,6 +18,15 @@ axios
 
       // elt.querySelector(".powers").innerHTML = el.abilities.join(", ");
 
+      // elt.getElementById("open").onclick = () => {
+      //   return open(el);
+      // };
+
+      // let open = el => {
+      //   const tplsingleChar = document.querySelector("#tpl-singleChar");
+
+      // };
+
       target.appendChild(elt);
     };
     result.forEach(displayHero);

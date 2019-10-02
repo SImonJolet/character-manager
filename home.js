@@ -15,6 +15,12 @@ axios_1["default"]
         elt.querySelector(".shortDescription").innerHTML = el.shortDescription;
         elt.querySelector("img").src = "data:image/png;base64," + el.image;
         // elt.querySelector(".powers").innerHTML = el.abilities.join(", ");
+        // elt.getElementById("open").onclick = () => {
+        //   return open(el);
+        // };
+        // let open = el => {
+        //   const tplsingleChar = document.querySelector("#tpl-singleChar");
+        // };
         target.appendChild(elt);
     };
     result.forEach(displayHero);
