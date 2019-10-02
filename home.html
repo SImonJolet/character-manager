@@ -17,6 +17,8 @@
       href="https://fonts.googleapis.com/css?family=Notable&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
@@ -26,25 +28,32 @@
         <div id="Tool">Your Tool to manage your favorite Heroes</div>
       </div>
     </header>
+    
     <div class="container">
-<a href="create.html">
-      <button type="button"  target="_blank">Create</button></a>
+      <div class="Add"> 
+        <div class="addText">Feel free to add your favorite characters !!</div>
+        <a href="create.html">
+          <button type="button" id="btnCreate" target="_blank">Create</button>
+        </a>
+      </div>
       <section class="material">
         <template id="tpl-hero">
           <li class="heroList">
             <div class="hero">
               <div class="name"></div>
               <p class="shortDescription"></p>
-              <img id="imageHero" src="" alt="">
-            
-            <p class="powers"></p>
-            <div class="btnOpen"></div>
-            <div class="btnDelete"></div>
-            <div class="btnEdit"></div>
+              <img id="imageHero" src="" alt="No Image: Maybe the Justice has no face">
+            <div class="btn">
+              <div class="btnOpen"></div>
+              <div class="btnDelete"></div>
+              <div class="btnEdit"></div>
+            </div>
            
           </li>
         </template>
         <ol id="target"></ol>
+              
+
       </section>
     </div>
     <a href="characters.html"></a>

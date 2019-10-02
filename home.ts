@@ -20,13 +20,13 @@ axios
       elt.querySelector("img").src = `data:image/png;base64,${el.image}`;
 
       elt.querySelector(".btnOpen").innerHTML = `
-      <a href="./characters.html?id=${el.id}" target="_blank"><button type="button" id="btnOpen">Open</button></a>
+      <a href="./characters.html?id=${el.id}" target="_blank"><button type="button" class="Open" id="btn">Open</button></a>
      `;
       elt.querySelector(".btnDelete").innerHTML = `
-      <button type="button" value=${el.id} class="btnDeleteFunct">Delete</button>`;
+      <button type="button" value=${el.id} class="btnDeleteFunct" id="btn">Delete</button>`;
       elt.querySelector(
         ".btnEdit"
-      ).innerHTML = `<a href="./edit.html?id=${el.id}"><button>Edit</button></a>`;
+      ).innerHTML = `<a href="./edit.html?id=${el.id}"><button class="Edit" id="btn">Edit</button></a>`;
 
       target.appendChild(elt);
     };

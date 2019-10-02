@@ -15,6 +15,8 @@ header {
 }
 .container {
   width: 50%;
+  margin: auto;
+  margin-top: 6vw;
   border: 1vw solid rgba(46, 167, 193, 0.5);
   border-radius: 2vw;
   text-align: center;
@@ -29,4 +31,13 @@ header {
 .shortDescription {
   font-family: "Roboto", sans-serif;
   font-size: 2vw;
+  padding: 1vw;
+}
+.Image {
+  padding: 3vw;
+}
+.Description {
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+  padding: 1vw;
 }

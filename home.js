@@ -16,9 +16,9 @@ axios_1["default"]
         elt.querySelector(".name").innerHTML = el.name;
         elt.querySelector(".shortDescription").innerHTML = el.shortDescription;
         elt.querySelector("img").src = "data:image/png;base64," + el.image;
-        elt.querySelector(".btnOpen").innerHTML = "\n      <a href=\"./characters.html?id=" + el.id + "\" target=\"_blank\"><button type=\"button\" id=\"btnOpen\">Open</button></a>\n     ";
-        elt.querySelector(".btnDelete").innerHTML = "\n      <button type=\"button\" value=" + el.id + " class=\"btnDeleteFunct\">Delete</button>";
-        elt.querySelector(".btnEdit").innerHTML = "<a href=\"./edit.html?id=" + el.id + "\"><button>Edit</button></a>";
+        elt.querySelector(".btnOpen").innerHTML = "\n      <a href=\"./characters.html?id=" + el.id + "\" target=\"_blank\"><button type=\"button\" class=\"Open\" id=\"btn\">Open</button></a>\n     ";
+        elt.querySelector(".btnDelete").innerHTML = "\n      <button type=\"button\" value=" + el.id + " class=\"btnDeleteFunct\" id=\"btn\">Delete</button>";
+        elt.querySelector(".btnEdit").innerHTML = "<a href=\"./edit.html?id=" + el.id + "\"><button class=\"Edit\" id=\"btn\">Edit</button></a>";
         target.appendChild(elt);
     };
     result.forEach(displayHero);

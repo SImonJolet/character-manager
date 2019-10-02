@@ -23,6 +23,8 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .heroList {
@@ -31,7 +33,6 @@ header {
   height: 38vw;
   width: 26%;
   margin: 2%;
-  padding-left: 2vw;
   padding-top: 2vw;
   list-style: none;
   display: -webkit-box;
@@ -42,14 +43,16 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #85c1e9;
+  text-align: center;
 }
 
 .name {
   font-family: "Notable", sans-serif;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: #e74c3c;
   text-align: center;
   text-shadow: 1px 1px 1px white;
+  padding: 0.2vw;
 }
 
 .shortDescription {
@@ -57,23 +60,63 @@ header {
 }
 
 #imageHero {
+  height: 10vw;
+  width: 10vw;
   text-align: center;
+  font-family: "Turret Road", cursive;
 }
 
-#edit {
-  -webkit-box-shadow: inset 0px 39px 0px -24px #e67a73;
-  box-shadow: inset 0px 39px 0px -24px #ebe26b;
-  background-color: #dacd17;
-  border-radius: 4px;
-  border: 1px solid #ffffff;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 15px;
-  padding: 6px 15px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #dacd17;
+.btn {
+  margin-top: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#btn {
+  background-color: white;
+  border: 3px solid #e74c3c;
+  border-radius: 2px;
+}
+
+.Add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5vw;
+  margin-bottom: 5vw;
+}
+
+.addText {
+  font-family: "Turret Road", cursive;
+  font-size: 3vw;
+}
+
+#btnCreate {
+  font-family: "Turret Road", cursive;
+  font-size: 4vw;
+  height: 6vw;
+  color: #85c1e9;
+  border: 3px solid #e74c3c;
+  border-radius: 0.5vw;
+  margin-left: 3vw;
+}
+
+.Open {
+  width: 7vw;
+}
+
+.btnDeleteFunc {
+  width: 8vw;
+}
+
+.Edit {
+  width: 6vw;
 }
 
 

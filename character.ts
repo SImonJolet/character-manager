@@ -9,8 +9,10 @@ const api = "https://character-database.becode.xyz";
 
 axios.get(`${api}/characters/${id}`).then(function(response: any) {
   const info = response.data;
+  document.querySelector(".TitleUp")!.innerHTML = info.name;
 
   document.querySelector(".Name")!.innerHTML = `Mon nom est ${info.name}`;
+
   document.querySelector(".shortDescription")!.innerHTML =
     info.shortDescription;
   document.querySelector(".Description")!.innerHTML = info.description;

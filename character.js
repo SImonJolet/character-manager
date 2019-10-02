@@ -9,6 +9,7 @@ var axios_1 = require("axios");
 var api = "https://character-database.becode.xyz";
 axios_1["default"].get(api + "/characters/" + id).then(function (response) {
     var info = response.data;
+    document.querySelector(".TitleUp").innerHTML = info.name;
     document.querySelector(".Name").innerHTML = "Mon nom est " + info.name;
     document.querySelector(".shortDescription").innerHTML =
         info.shortDescription;
