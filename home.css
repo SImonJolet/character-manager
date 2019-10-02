@@ -1,22 +1,30 @@
 body {
   padding-top: 2em;
 }
+
 header {
   text-align: center;
 }
+
 #Name {
   font-family: "Notable", sans-serif;
   color: #e74c3c;
   font-size: 6vw;
 }
+
 #Tool {
   font-family: "Turret Road", cursive;
   font-size: 3vw;
 }
+
 #target {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .heroList {
   border: 5px solid rgba(46, 167, 193, 0.3);
   border-radius: 2vw;
@@ -26,10 +34,16 @@ header {
   padding-left: 2vw;
   padding-top: 2vw;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #85c1e9;
 }
+
 .name {
   font-family: "Notable", sans-serif;
   font-size: 3vw;
@@ -37,6 +51,7 @@ header {
   text-align: center;
   text-shadow: 1px 1px 1px white;
 }
+
 .shortDescription {
   font-family: "Turret Road", cursive;
 }
@@ -44,3 +59,4 @@ header {
 #imageHero {
   text-align: center;
 }
+/*# sourceMappingURL=home.css.map */
